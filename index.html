@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./vendor/jstree.css" />
+        <link rel="stylesheet" type="text/css" href="./vendor/iziModal.css" />
+        <link rel="stylesheet" type="text/css" href="./plume-main.css" />
+    </head>
+    <body class="plume-body dark">
+        <div class="flex-row">
+            <div id="sidebar" class="plume-sidebar-container" style="flex-grow: 0; flex-shrink: 0; position: relative; background: rgb(55, 60, 63); transition:box-shadow 300ms ease-in 0s;">
+                <div class="plume-sidebar" style="display: flex; flex-direction: column; height: 100%; position: relative; pointer-events: auto; max-height: 100%; opacity: 1;">
+                    <div style="display: block; flex-shrink: 0; flex-grow: 0;">PLUM3</div>
+                    <div id="tree">
+                        <ul>
+                            <li data-jstree='{ "selected" : true, "opened" : true }'>Root node
+                                <ul>
+                                    <li>Child 1</li>
+                                    <li>Child 2</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="debug">DEBUG</div>
+                </div>
+            </div>
+            <div id="right">
+                <div class="plume-selectable">
+                    <div contenteditable="true" spellcheck="true" class="plume-input plume-title" id="plume-page-title">Page title</div>
+                </div>
+                <div class="plume-selectable">
+                    <div contenteditable="true" spellcheck="true" class="plume-input" placeholder="Type / for commands" id="plume-first-input"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="slashMenu">modal thingy</div>
+        <!-- TODO : remove one ! -->
+        <!-- ELECTRON -->
+        <script>window.$ = window.jQuery = require('jquery');</script>
+        <!-- DEV WEB -->
+        <script src="./vendor/jquery.min.js"></script> 
+        <script src="./vendor/jstree.min.js"></script>
+        <script src="./vendor/split.min.js"></script>
+        <script src="./vendor/iziModal.js"></script>
+        <script src="./vendor/showdown.js"></script>
+        <script src="./js/plume.js"></script>
+        <script src="./js/plume-plugins.js"></script>
+    </body>
+</html>

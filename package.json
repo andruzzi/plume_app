@@ -1,0 +1,18 @@
+{
+  "name": "plume_app",
+  "version": "0.0.1",
+  "description": "Light KB app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "moog",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "electron": "^9.1.0"
+  }
+}

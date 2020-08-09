@@ -1,0 +1,79 @@
+/* BASE */
+body {
+    font-family:-apple-system, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: auto;
+}
+body.plume-body, #plume-app {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+body.dark {
+    background: #2f3437;
+}
+
+.plume-sidebar {
+    background: rgb(55, 60, 63);
+    height: 100%;
+    max-height: 100%;
+} 
+
+.flex-row {
+    display:flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.gutter.gutter-horizontal {
+    cursor: ew-resize;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*, *:focus {
+    outline: 0;
+}
+
+#right {
+    overflow: auto;
+}
+
+/* BLOCKS */
+[contenteditable] {
+    cursor: text;
+    -webkit-tap-highlight-color: transparent;
+}
+
+[contenteditable]:empty:before {
+    content: attr(placeholder);
+    display: block;
+    color: grey;
+}
+
+.plume-input {
+    width: 100%;
+    max-width: 100%;
+    white-space: pre-wrap;
+    word-break: break-word;
+    caret-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid black;
+}
+
+.plume-title {
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 40px;
+}
+/* JSTREE OVERRIDE */
+.jstree-default .jstree-wholerow-clicked, .jstree-default .jstree-wholerow-hovered {
+    background: rgb(71,76,80);
+}
+i.jstree-themeicon {display:none !important;}
+.jstree-anchor { font-size: 14px; font-weight: 600; }
